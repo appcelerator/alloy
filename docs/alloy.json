@@ -1,0 +1,468 @@
+{
+    "categories": {
+        "WindowContainer": [
+            "Titanium.UI.MobileWeb.NavigationGroup",
+            "Titanium.UI.iOS.NavigationWindow",
+            "Titanium.UI.iPad.SplitWindow",
+            "Titanium.UI.Tab"
+        ],
+        "TopLevelContainer": [
+            "Titanium.UI.Window",
+            "Titanium.UI.iPad.SplitWindow",
+            "Titanium.UI.iOS.NavigationWindow",
+            "Titanium.UI.TabGroup"
+        ],
+        "ViewContainers": [
+            "Titanium.UI.Window",
+            "Titanium.UI.View",
+            "Titanium.UI.ScrollView",
+            "Titanium.UI.ScrollableView"
+        ],
+        "CellContainers": [
+            "ItemTemplate",
+            "Titanium.UI.TableViewRow"
+        ],
+        "OverlayContainers": [],
+        "InputControls": [
+            "Titanium.UI.Button",
+            "Titanium.UI.SearchBar",
+            "Titanium.UI.Slider",
+            "Titanium.UI.Switch",
+            "Titanium.UI.TextArea",
+            "Titanium.UI.TextField"
+        ],
+        "ChildlessViewComponents": [
+            "Titanium.UI.ActivityIndicator",
+            "Titanium.UI.Button",
+            "Titanium.UI.ImageView",
+            "Titanium.UI.Label",
+            "Titanium.UI.ProgressBar",
+            "Titanium.UI.SearchBar",
+            "Titanium.UI.Slider",
+            "Titanium.UI.Switch",
+            "Titanium.UI.TextArea",
+            "Titanium.UI.TextField",
+            "Titanium.UI.WebView"
+        ],
+        "PseudoTypes": [
+            "ButtonName",
+            "Image",
+            "Label",
+            "Option",
+            "ItemTemplate"
+        ],
+        "ProxyProperties": [
+            "ContentView",
+            "LeftButton",
+            "LeftNavButton",
+            "RightButton",
+            "RightNavButton",
+            "Search",
+            "SearchView",
+            "Templates",
+            "TitleControl"
+        ]
+    },
+    "Titanium.Android.Menu": {
+        "parents": [
+            "Titanium.UI.TabGroup",
+            "Titaniun.UI.Window"
+        ],
+        "children": [
+            "Titanium.Android.MenuItem"
+        ]
+    },
+    "Titanium.Android.MenuItem": {
+        "parents": [
+            "Titanium.Android.Menu"
+        ]
+    },
+    "Titanium.Media.VideoPlayer": {
+        "parents": [
+            "Titanium.UI.Window",
+            "Titanium.UI.View",
+            "Titanium.UI.ScrollView",
+            "Titanium.UI.ScrollableView"
+        ]
+    },
+    "Titanium.UI.ActivityIndicator": {
+        "parents": [
+            "ViewContainers",
+            "CellContainers"
+        ]
+    },
+    "Titanium.UI.AlertDialog": {
+        "proxyProperties": {
+            "buttonNames": {
+                "children": [
+                    "ButtonName"
+                ]
+            }
+        }
+    },
+    "Titanium.UI.Android.ProgressIndicator": {
+        "parents": [
+            "ViewContainers"
+        ]
+    },
+    "Titanium.UI.Android.SearchView": {
+        "parents": [
+            "Search",
+            "Titanium.UI.ListView",
+            "Titanium.UI.TableView"
+        ]
+    },
+    "Titanium.UI.Button": {
+        "parents": [
+            "ViewContainers",
+            "CellContainers"
+        ]
+    },
+    "Titanium.UI.ButtonBar": {
+        "collectionBinding": "1.1.0",
+        "parents": [
+            "ViewContainers"
+        ],
+        "proxyProperties": {
+            "labels": {
+                "children": [
+                    "Label"
+                ]
+            }
+        }
+    },
+    "Titanium.UI.DashboardItem": {
+        "parents": [
+            "Titanium.UI.DashboardView"
+        ]
+    },
+    "Titanium.UI.DashboardView": {
+        "children": [
+            "Titanium.UI.DashboardItem"
+        ]
+    },
+    "Titanium.UI.ImageView": {
+        "parents": [
+            "ViewContainers",
+            "CellContainers"
+        ]
+    },
+    "Titanium.UI.Label": {
+        "parents": [
+            "ViewContainers",
+            "CellContainers"
+        ]
+    },
+    "Titanium.UI.ListItem": {
+        "parents": [
+            "Titanium.UI.ListSection"
+        ],
+        "since": "1.2.0"
+    },
+    "Titanium.UI.ListSection": {
+        "children": [
+            "Titanium.UI.ListItem"
+        ],
+        "collectionBinding": "1.2.0",
+        "parents": [
+            "Titanium.UI.ListView"
+        ],
+        "proxyProperties": {
+            "footerView": {
+                "since": "1.3.0"
+            },
+            "headerView": {
+                "since": "1.3.0"
+            }
+        },
+        "since": "1.2.0"
+    },
+    "Titanium.UI.ListView": {
+        "children": [
+            "Titanium.UI.ListSection",
+            "Titanium.UI.Android.SearchView",
+            "Titanium.UI.SearchBar"
+        ],
+        "parents": [
+            "ViewContainers"
+        ],
+        "proxyProperties": {
+            "footerView": {
+                "since": "1.3.0"
+            },
+            "headerView": {
+                "since": "1.3.0"
+            },
+            "pullView": {
+                "since": "1.3.0"
+            },
+            "searchView": {
+                "children": [
+                    "Titanium.UI.Android.SearchView",
+                    "Titanium.UI.SearchBar"
+                ],
+                "since": "1.3.0"
+            },
+            "templates": {
+                "children": [
+                    "ItemTemplates"
+                ]
+            }
+        },
+        "since": "1.2.0"
+    },
+    "Titanium.UI.MobileWeb.NavigationGroup": {
+        "parents": [
+            "Titanium.UI.Window"
+        ],
+        "children": [
+            "Titanium.UI.Window"
+        ]
+    },
+    "Titanium.UI.Notification": {
+        "parents": [
+            "ViewContainers"
+        ]
+    },
+    "Titanium.UI.OptionDialog": {
+        "proxyProperties": {
+            "buttonNames": {
+                "children": [
+                    "ButtonName"
+                ]
+            },
+            "options": {
+                "children": [
+                    "Option"
+                ]
+            }
+        }
+    },
+    "Titanium.UI.Picker": {
+        "children": [
+            "Titanium.UI.PickerColumn",
+            "Titanium.UI.Picker"
+        ]
+    },
+    "Titanium.UI.PickerColumn": {
+        "alias": "Column",
+        "children": [
+            "Titanium.UI.PickerRow"
+        ],
+        "parents": [
+            "Titanium.UI.Picker"
+        ]
+    },
+    "Titanium.UI.PickerRow": {
+        "alias": "Row",
+        "parents": [
+            "Titanium.UI.PickerColumn",
+            "Titanium.UI.Picker"
+        ]
+    },
+    "Titanium.UI.ProgressBar": {
+        "parents": [
+            "ViewContainers"
+        ]
+    },
+    "Titanium.UI.ScrollView": {
+        "parents": [
+            "ViewContainers"
+        ],
+        "children": [
+            "ChildlessViewComponents"
+        ]
+    },
+    "Titanium.UI.ScrollableView": {
+        "collectionBinding": "1.1.0"
+    },
+    "Titanium.UI.SearchBar": {
+        "parent": [
+            "Titanium.UI.ListView.search",
+            "Titanium.UI.TableView.search"
+        ]
+    },
+    "Titanium.UI.Slider": {
+        "parents": [
+            "ViewContainers",
+            "CellContainers"
+        ]
+    },
+    "Titanium.UI.Switch": {
+        "parents": [
+            "ViewContainers",
+            "CellContainers"
+        ]
+    },
+    "Titanium.UI.Tab": {
+        "parents": [
+            "Titanium.UI.TabGroup"
+        ],
+        "children": [
+            "Titanium.UI.Window"
+        ]
+    },
+    "Titanium.UI.TabGroup": {
+        "children": [
+            "Titanium.UI.Tab"
+        ]
+    },
+    "Titanium.UI.TableView": {
+        "children": [
+            "Titanium.UI.Android.SearchView",
+            "Titanium.UI.SearchBar",
+            "Titanium.UI.TableViewRow",
+            "Titanium.UI.TableViewSection"
+        ],
+        "collectionBinding": "1.0.0",
+        "proxyProperties": {
+            "footerView": {},
+            "headerPullView": {},
+            "headerView": {
+                "since": "1.1.0"
+            },
+            "search": {
+                "children": [
+                    "Titanium.UI.Android.SearchView",
+                    "Titanium.UI.SearchBar"
+                ]
+            }
+        }
+    },
+    "Titanium.UI.TableViewRow": {
+        "children": [
+            "InputControls"
+        ]
+    },
+    "Titanium.UI.TableViewSection": {
+        "children": [
+            "Titanium.UI.TableViewRow"
+        ],
+        "parent": [
+            "Titanium.UI.TableView"
+        ],
+        "proxyProperties": {
+            "headerView": {}
+        }
+    },
+    "Titanium.UI.TextArea": {
+        "parents": [
+            "ViewContainers"
+        ]
+    },
+    "Titanium.UI.TextField": {
+        "parents": [
+            "ViewContainers"
+        ],
+        "proxyProperties": {
+            "keyboardToolbar": {
+                "since": "1.3.0"
+            },
+            "leftButton": {
+                "children": [
+                    "Titanium.UI.Button"
+                ],
+                "since": "1.3.0"
+            },
+            "rightButton": {
+                "children": [
+                    "Titanium.UI.Button"
+                ],
+                "since": "1.3.0"
+            }
+        }
+    },
+    "Titanium.UI.View": {
+        "children": [
+            "ChildlessViewComponents"
+        ],
+        "collectionBinding": "1.0.0",
+        "parents": ["ViewContainers"]
+    },
+    "Titanium.UI.WebView": {
+        "parents": [
+            "ViewContainers"
+        ]
+    },
+    "Titanium.UI.Window": {
+        "parents": [
+            "ContentView",
+            "WindowContainer"
+        ],
+        "proxyProperties": {
+            "leftNavButton": {},
+            "rightNavButton": {},
+            "titleControl": {}
+        }
+    },
+    "Titanium.UI.iOS.AdView": {
+        "children": [
+            "ChildlessViewComponents"
+        ]
+    },
+    "Titanium.UI.iOS.CoverFlowView": {
+        "parents": [
+            "ViewContainers"
+        ],
+        "collectionBinding": "1.1.0",
+        "proxyProperties": {
+            "images": {
+                "children": [
+                    "Image"
+                ]
+            }
+        }
+    },
+    "Titanium.UI.iOS.NavigationWindow": {
+        "children": [
+            "ContentView",
+            "Titanium.UI.Window"
+        ],
+        "since": "1.2.2"
+    },
+    "Titanium.UI.iOS.TabbedBar": {
+        "collectionBinding": "1.1.0",
+        "proxyProperties": {
+            "labels": {
+                "children": [
+                    "Label"
+                ]
+            }
+        }
+    },
+    "Titanium.UI.iOS.Toolbar": {
+        "collectionBinding": "1.1.0",
+        "proxyProperties": {
+            "items": {
+                "children": [
+                    "FlexSpace",
+                    "Titanium.UI.Button"
+                ]
+            }
+        }
+    },
+    "Titanium.UI.iPad.Popover": {
+        "proxyProperties": {
+            "contentView": {
+                "children": [
+                    "Titanium.UI.iOS.NavigationWindow",
+                    "Titanium.UI.View",
+                    "Titanium.UI.Window"
+                ],
+                "since": "1.3.0"
+            },
+            "leftNavButton": {
+                "since": "1.1.0"
+            },
+            "rightNavButton": {
+                "since": "1.1.0"
+            }
+        }
+    },
+    "Titanium.UI.iPad.SplitWindow": {
+        "children": [
+            "Titanium.UI.iOS.NavigationWindow",
+            "Titanium.UI.Window"
+        ]
+    }
+}

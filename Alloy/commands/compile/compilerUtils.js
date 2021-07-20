@@ -235,6 +235,10 @@ exports.getParserArgs = function(node, state, opts) {
 				theValue = styler.STYLE_EXPR_PREFIX + theValue;
 			}
 
+			if ( theValue.startsWith('~/')) {
+				theValue = styler.STYLE_EXPR_PREFIX + 'WPATH("' + theValue.substring(2, theValue.length) + '")';
+			}
+
 			if (attrName === 'class') {
 				if (autoStyle) {
 					createArgs[CONST.CLASS_PROPERTY] = theValue.split(/\s+/) || [];
